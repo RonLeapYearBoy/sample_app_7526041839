@@ -1,0 +1,59 @@
+# ---+----------------------Augmented  .gitignore ----------------------------------------------------
+#                              07.000-GitIgnore.txt                                               ---
+#
+#   Before we push our project up for public viewing we need to set up our gitignore file.
+#   The .gitignore file is created with the Rails New.   The advantage of bitbucket is that
+#   your code is not available for public viewing.   If this is infact what you want.
+#
+#   Rails 4.0 Listing 1.7. An augmented .gitignore file.                                             page 29
+#       -->  http://rails-4-0.railstutorial.org/book/beginning#code-gitignore
+#
+#   Rails 4.2 Listing 3.43  Adding Spring to the .gitignore file.
+#       --> https://www.railstutorial.org/book/static_pages#code-gitignore_spring
+#
+#   $ gedit  .gitignore
+#
+#
+# - root files
+# ------------
+*~
+#
+# - dot files
+# -----------
+.project
+.idea
+.secret
+.DS_store
+#
+# - Ignore bundle files
+# ---------------------
+/.bundle
+bundler_stubs/
+#
+# - Ignore log files
+# ------------------
+/log/*.log
+#
+# - Ignore temp and swap files
+# ----------------------------
+/tmp/*
+/tmp
+*.swp
+#
+# - Ignore the default SQLite database.
+# -------------------------------------
+/db/*.sqlite3
+/db/*.sqlite3-journal
+#
+# - Ignore test files
+# -------------------
+capybara-*.html
+/spec/tmp/*
+#
+# - The database yml file has passwords
+# ------------------------------------
+config/database.yml
+#
+# - Ignore Spring files --> https://www.railstutorial.org/book/static_pages#code-gitignore_spring
+# ---------------------
+/spring/*.pid
